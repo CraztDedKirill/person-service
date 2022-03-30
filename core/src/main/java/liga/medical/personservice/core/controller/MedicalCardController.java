@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 
 @Validated
 @RestController
-@RequestMapping("/medical-card")
+@RequestMapping("/admin/medical-card")
 public class MedicalCardController {
 
     private MedicalCardService medicalCardService;

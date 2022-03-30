@@ -19,6 +19,7 @@ public class PersonDataService {
     public void insert(PersonDataEntity personData) {
         personDataRepository.insert(personData);
     }
+
     public void insertAll(List<PersonDataEntity> personDataEntityList) {
         personDataRepository.insertAll(personDataEntityList);
     }
@@ -30,4 +31,13 @@ public class PersonDataService {
     public List<PersonDataEntity> getPersonDataByIds(@RequestParam List<Long> ids) {
         return personDataRepository.findByIds(ids);
     }
+
+    public void deleteById(Long id) {
+        personDataRepository.deleteById(id);
+    }
+
+    public PersonDataEntity loadUserByUsername(String s) {
+        return personDataRepository.findByEmail(s);
+    }
+
 }

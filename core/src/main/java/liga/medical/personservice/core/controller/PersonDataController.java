@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 @Validated
 @RestController
-@RequestMapping("/personData")
+@RequestMapping("/admin/person-data")
 public class PersonDataController {
 
     private  PersonDataService personDataService;

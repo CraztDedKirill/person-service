@@ -22,4 +22,7 @@ public interface PersonDataRepository {
     Boolean updateById(@Param("personDataEntity") PersonDataEntity personDataEntity);
 
     Boolean deleteById(@Param("personDataId") Long personDataId);
+
+    @Select("SELECT * FROM person_data WHERE email = #{email}")
+    PersonDataEntity findByEmail(String email);
 }

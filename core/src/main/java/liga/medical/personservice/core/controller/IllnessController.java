@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 @Validated
 @RestController
-@RequestMapping("/illness")
+@RequestMapping("/admin/illness")
 public class IllnessController {
 
     private IllnessService illnessService;

@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 @Validated
 @RestController
-@RequestMapping("/address")
+@RequestMapping("/admin/address")
 public class AddressController {
 
     private AddressService addressService;

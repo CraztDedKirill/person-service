@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 @Validated
 @RestController
-@RequestMapping("/contact")
+@RequestMapping("/admin/contact")
 public class ContactController {
 
     private  ContactService contactService;
